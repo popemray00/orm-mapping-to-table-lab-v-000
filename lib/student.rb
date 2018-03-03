@@ -29,8 +29,8 @@ class Student
       VALUES (?, ?)
       SQL
 
-    DB[:conn].execute(sql, student.name, student.grade)
-
+    DB[:conn].execute(sql, self.name, self.grade)
+    
   end
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]
